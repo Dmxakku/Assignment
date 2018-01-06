@@ -1,0 +1,30 @@
+<html>
+<head>
+    <title>Jsassignment 27</title>
+    <script>
+    function ba()
+    {
+    var parid=document.getElementById('we');
+    var fm=document.getElementById('fn').value;
+    var lm=document.getElementById('ln').value;
+    var p=document.getElementById('ps').value;
+    var n=fm+" "+lm;
+    var men=document.getElementById('em').value;
+    if((fm!=null)&&(lm!=null)&&(em!=null)&&(p!=null)){
+    document.getElementById('we').innerHTML="welcome "+n+" .My EmailId is "+men;
+    }
+}
+    </script>
+</head>
+<body>
+    <ul style="list-style-type:none">
+        <li>First Name:<input type="text" id="fn"></li><br/>
+        <li>Last Name:<input type="text" id="ln"></li><br/>
+        <li>Email Id:<input type="email" id="em"></li><br/>
+        <li>Password:<input type="password" id="ps"></li><br/>
+    </ul>
+    <br/>
+    <button type="submit" onclick="ba()">Sign-Up</button><br/>
+    <p id="we"></p>
+</body>
+</html>
