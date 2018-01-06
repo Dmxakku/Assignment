@@ -1,0 +1,110 @@
+
+<html>
+<head>
+  <title>Jsassignment 30</title>
+  <style >
+  table{
+  width: 50%;
+  height: 60%;
+  
+  margin-left: 25%;
+  margin-top: 10%;
+
+
+}
+tr{
+  height:20px;
+}
+.ce{
+  width: 30%;
+}
+.re{
+  width: 25%;
+  height: 20px;
+  color: red;
+}
+.la{
+  width: 20%;
+
+}
+input{
+  width: 100%;
+  height: 60%;
+}
+body{
+  background-color: #99ffff;
+  font-size: 20px;
+  font-family: arial;
+}
+p{
+  color: red;
+  width: 100%;
+
+}
+  </style>
+    <script>
+     function validate()
+     {
+      var s=document.getElementById('nm').value;
+      var p=document.getElementById('pa').value;
+      var e=document.getElementById('em').value;
+      var m=document.getElementById('mb').value;
+      var s=document.getElementById('ps').value;
+      var rs=document.getElementById('cp').value;
+      if(s=="")
+      {
+       document.getElementById("p1").innerHTML="Enter your name";
+     }
+      if(p=="")
+      {
+       document.getElementById("p2").innerHTML="Enter your address";
+      }
+      if(e=="")
+      {
+       document.getElementById("p3").innerHTML="Enter a valid email";
+      }
+      if(m=="")
+      {
+       document.getElementById("p4").innerHTML="Enter your mobile";
+      }
+      if(s=="")
+      {
+       document.getElementById("p5").innerHTML="Enter your password";
+      }
+      if(rs=="")
+      {
+       document.getElementById("p6").innerHTML="Re-Enter password";
+      }
+    }
+    </script>
+</head>
+<body bgcolor="#18ffff">
+  <form>
+  <table>
+    <tr><th colspan=3>Student Registration Form</th></td></tr>
+  <tr>
+    <td class="la">Name:</td><td class="ce"><input type="text" id="nm" name="name"></td><td><label id="p1" class="re"></label></td>
+  </tr>
+  <tr>
+    <td class="la">personal Address:</td><td class="ce"><input type="text" id="pa"/></td><td class="re"><p id="p2"></p></td>
+  </tr>
+  <tr>
+    <td class="la">Email_Id:</td><td class="ce"><input type="email" id="em"/></td><td class="re"><p id="p3"></p></td>
+  </tr>
+  <tr>
+    <td class="la">Moblie No</td><td class="ce"><input type="text" id="mb"/></td><td class="re"><p id="p4"></p></td>
+  </tr>
+  <tr>
+    <td class="la">Password:</td><td class="ce"><input type="password" id="ps"/></td><td class="re"><p id="p5"></p></td>
+  </tr>
+  <tr>
+    <td class="la">Confirm Password:</td><td class="ce"><input type="password" id="cp"/></td><td class="re"><p id="p6"></p></td>
+  </tr>
+  <tr>
+    <td colspan=3 align="center"><button type="submit" onclick="validate();return false;">Submit form</button></td>
+  </tr>
+
+  </table>
+</form>
+</body>
+</html>
