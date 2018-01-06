@@ -1,0 +1,66 @@
+<html>
+<head>
+  <title>Jsassignment 33</title>
+<style>
+body{
+  background-color: #99ffff;
+  ;
+}
+form{
+  margin-left: 50px;
+  margin-top: 55px;
+}
+table{
+  width: 300px;
+  height: 150px;
+
+}
+td{
+  font-size: 15px;
+  text-align: center;
+}
+th{
+  padding-top: 20px;
+  font-size: 20px;
+}
+p{
+  color: red;
+}
+</style>
+    <script>
+      function val(){
+  var gra=document.getElementById('g').checked;
+  var pos=document.getElementById('pg').checked;
+  if((gra==true)||(pos==true)){
+    document.write("Thanks for responds");
+}
+  else{
+    document.getElementById('p2').innerHTML="Please choose your Qualification";
+    
+  }
+}
+    </script>
+</head>
+    <body bgcolor="#18ffff">
+   <form>
+    <table>
+    <tr>
+    <th colspan=2>Check Box validation</th>
+    </tr>
+    <tr>
+    <td>Qualification:
+    </td>
+    <td><input type="checkbox" value="graduate" name="qualification" id="g">Graduate<input type="checkbox" value="post" name="qualification" id="pg">Post Graduate
+    </td>
+    </tr>
+    <tr>
+      <td colspan=2><p id="p2"></p>
+      </td>
+    <tr>
+      <td colspan=2><button type="submit" onclick="val();return false;" >Submit</button>
+      </td>
+  </tr>
+    </table>
+  </form>
+</body>
+</html>
